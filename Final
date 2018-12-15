@@ -1,0 +1,44 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+	cout << "Grade Average Program " << endl ;
+		cout << "Written by VOIDn"  << endl ;
+		
+
+// Constants
+	const int TOTAL_NUMBERS = 3;
+// Variables
+	double grade1, grade2, grade3, avg;
+// Get First Grade
+cout << "Please Enter First Grade  : ";
+		cin >> grade1;
+		// Get Second Grade
+	cout << "Please Enter Second Grade : ";
+	cin >> grade2;
+	// Get Third Grade
+		cout << "Please Enter Third Grade  : ";
+		cin >> grade3;
+		// Formula for average
+		avg = (grade1 + grade2 + grade3) / TOTAL_NUMBERS;
+		//Display results
+	cout << endl;
+	cout << "Your Grades"<< endl;
+	cout << "---------------------" << endl;
+	cout << "First Grade  :" << setw(7) << grade1 << endl;
+	cout << "Second Grade :" << setw(7) << grade2 << endl;
+	cout << "Third Grade  :" << setw(7) << grade3 << endl;
+	cout << "---------------------" << endl;
+	cout << "Average      :" << setw(7) << setprecision(1) << fixed << avg << endl;
+	
+	//pause screen
+	//exit command
+
+	cout << "\nPress Enter key to exit...";
+	cin.ignore();
+	cin.get();
+
+	return 0;
+}
